@@ -4,9 +4,6 @@ services:
 before_install:
    - docker build -t vmalse/mysimpleapp .
 
-script:
-   - docker run vmalse/mysimpleapp
-
 deploy:
    provider: elasticbeanstalk
    region: "us-east-2"
