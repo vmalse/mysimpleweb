@@ -2,7 +2,10 @@ sudo: required
 services: 
    - docker
 before_install:
-   - docker build -t vinitabc/docker-react .
+   - docker build -t vmalse/mysimpleapp .
+
+script:
+   - docker run vmalse/mysimpleapp
 
 deploy:
    provider: elasticbeanstalk
