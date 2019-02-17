@@ -4,9 +4,6 @@ services:
 before_install:
    - docker build -t vinitabc/docker-react .
 
-script:
-   - docker run vinitabc/docker-react npm run test -- --coverage
-
 deploy:
    provider: elasticbeanstalk
    region: "us-east-2"
